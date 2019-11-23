@@ -1,15 +1,17 @@
 package com.cherevatyi;
 
-import org.graalvm.compiler.lir.LIRInstruction;
 
 public class User {
-    String name;
-    int age;
+    private String name;
+    private int age;
     public User() { }
-    public User(String name, int age) {
+    User(String name, int age) {
         this.name = name;
         this.age = age;
     }
+
+    @Override
+    public String toString() { return this.name; }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
