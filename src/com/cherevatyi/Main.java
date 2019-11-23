@@ -13,9 +13,15 @@ public class Main {
         System.out.println("Check remove");
         System.out.println(someList.get(0));
         System.out.println("Check ArrayList");
+        someList.add(4, new User ("Vasya", 90));
         for (User u: someList) System.out.print(u + " ");
         System.out.println();
         System.out.println("Check Array");
         for (User u: arr) System.out.print(u + " ");
+        System.out.println();
+        someList.remove(4);
+        System.out.println("R.I.P. Vasya");
+        for (User u: someList) System.out.print(u + " ");
+
     }
 }
